@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airball - Player Rankings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="fonts/ActayWide.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Apple-inspired Floating Navigation Bar -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="#" class="nav-logo">
+                <img src="logo.png" alt="Airball Logo">
+            </a>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#" class="nav-link">Leagues</a>
+                <a href="#" class="nav-link">Championship</a>
+                <a href="#" class="nav-button">
+                    <i class="fas fa-file-pdf"></i> Rules PDF
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <div class="logo-glow"></div>
+                <div class="logo-wrapper">
+                    <!-- Logo image placeholder - replace src with your actual logo -->
+                    <img id="logo-image" src="leagues_logo.png" alt="Airball Logo">
+                </div>
+                <!-- Fallback text logo, hidden when image loads -->
+                <h1 id="text-logo">AIRBALL</h1>
+            </div>
+            <h2>Official Player Rankings</h2>
+            <p class="date-display">Last Updated: <span id="currentDate">2025-03-21 14:50:17</span></p>
+        </header>
+
+        <main>
+            <div class="rankings-container" id="rankingsContainer">
+                <!-- Rankings will be populated here via JavaScript -->
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading rankings...</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Created by <span id="creator">quantumsoldship</span></p>
+        </footer>
+    </div>
+
+    <script src="players.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
