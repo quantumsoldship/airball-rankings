@@ -7,10 +7,10 @@
     --accent-dark: #132325;
     
     /* UI Colors */
-    --background: var(--accent-dark);
+    --background: var(--accent-light);
     --surface: rgba(26, 46, 48, 0.9);
     --surface-light: rgba(34, 60, 62, 0.9);
-    --text-primary: var(--accent-light);
+    --text-primary: var(--accent-dark);
     --text-secondary: #afd4d9;
     --text-tertiary: #8bacb0;
     
